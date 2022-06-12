@@ -1,4 +1,5 @@
-### Config options: General (Training and Prediction)
+### Config options: General (
+ing and Prediction)
 
 # Input data type (Options: zarr or memm)
 data_mode: 'zarr'
@@ -27,7 +28,10 @@ lr_step: 1000
 # Number of training batches (default: 10000)
 iterations: 10000
 # Partitioning of training data (Options: random, selected surveys, single survey, all surveys - default: 'all surveys')
-partition: 'selected_surveys'
+partition: 'single survey'
+
+train_surveys: [2019]
+val_surveys: [2017]
 # Whether to use save the trained model
 save_model_params: True
 
@@ -36,9 +40,9 @@ save_model_params: True
 # Evaluation model (Options: all, region, fish - default:'all')
 eval_mode: 'all'
 # Partitioning of the data for the inference (Options: selected surveys, single survey, all surveys - default: 'all surveys')
-partition_predict: 'selected surveys'
+partition_predict: 'single surveys'
 # List with the names of the selected survey
-selected_surveys: ['S2017843D20170513', 'S2017843D20170513T081028']
+selected_surveys: ['S2019847']
 # List with strings referring to colors
 colors_list: []
 # Whether to save the labels
