@@ -1,5 +1,4 @@
-### Config options: General (
-ing and Prediction)
+### Config options: General (ing and Prediction)
 
 # Input data type (Options: zarr or memm)
 data_mode: 'zarr'
